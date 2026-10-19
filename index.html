@@ -58,6 +58,77 @@ input{width:100%;padding:.75rem;border:.0625rem solid var(--cizgi);border-radius
 @media(min-width:64em){.kapanan>div{max-width:60rem}}
 @keyframes sola{to{transform:translateX(-100%)}}
 @keyframes saga{to{transform:translateX(100%)}}
+/* ===== Tasarım Düzenle sayfası: ölçüler sayfa genişliğine oranlı (cqw), görselle aynı oranlar ===== */
+#root.dar{max-width:30rem;padding:0}
+#root.dar .gecis{margin:0;padding:0}
+.kapanan>div.dar{max-width:30rem;padding:0}
+.td-dis{container-type:inline-size;background:#fbf1e8;min-height:100vh;min-height:100dvh}
+#root.dar .gecis{background:#fbf1e8}
+.kapanan:has(>div.dar){background:#fbf1e8}
+.td{--bakir:#b8693a;--koyu:#2b1d16;--soluk2:#7d6558;--kart:#f9f0e7;--kutu2:#f6e8dc;--ikon:#7b432b;padding:1.6cqw 3.2cqw 3.2cqw;color:var(--koyu);font-size:2.3cqw}
+:where(.td button){font:inherit;color:inherit;border:0;background:none;padding:0;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.td svg{display:block;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.td-ust{display:flex;align-items:center;gap:2.5cqw;padding:.6cqw 0 2cqw}
+.td-geri{display:grid;place-items:center;width:7cqw;height:7cqw;margin-left:-.6cqw;color:var(--koyu)}
+.td-geri svg{width:5.4cqw;height:5.4cqw}
+.td-ust h1{flex:1;margin:0;font-size:5.1cqw;font-weight:700;letter-spacing:-.02em;white-space:nowrap}
+.td-varsayilan{display:flex;align-items:center;gap:1.4cqw;padding:1.6cqw 2.8cqw;border-radius:99rem;background:#f8e4d5!important;font-size:2.55cqw!important;white-space:nowrap}
+.td-varsayilan svg{width:3.6cqw;height:3.6cqw;color:var(--ikon)}
+.td-onizleme{position:relative;height:72.8cqw;border-radius:4.7cqw;background:#f3e4d7;overflow:hidden;margin:0 -.6cqw}
+.td-rozet{position:absolute;left:2.1cqw;top:3.3cqw;z-index:2;display:flex;align-items:center;gap:1.6cqw;padding:1.3cqw 2.6cqw;border-radius:99rem;background:linear-gradient(180deg,#9a6a4b,#7f5238);color:#fff;font-size:2.6cqw;box-shadow:0 .3cqw .9cqw rgba(80,40,20,.25)}
+.td-rozet svg{width:3.6cqw;height:3.6cqw}
+.td-telefon{position:absolute;left:8.6cqw;right:8.6cqw;top:11.5cqw;bottom:-6cqw;border-radius:8.5cqw 8.5cqw 0 0;background:#151314;padding:1.6cqw 1.6cqw 0;box-shadow:0 0 0 .5cqw #d9d4d0,0 1.5cqw 3cqw rgba(60,30,10,.25)}
+.td-ekran{height:100%;border-radius:7cqw 7cqw 0 0;overflow:hidden;background:#f6e9de}
+.td-kapak{position:relative;height:33cqw;display:grid;place-content:center;justify-items:center;text-align:center;background:radial-gradient(ellipse at 80% 40%,#6b3a22 0,transparent 55%),radial-gradient(ellipse at 15% 60%,#4a2a1a 0,transparent 50%),linear-gradient(160deg,#2a1810,#3d2215 55%,#24140d);clip-path:polygon(0 0,100% 0,100% 88%,70% 96%,35% 92%,0 100%)}
+.td-kapak svg{width:5.6cqw;height:5.6cqw;color:#e2a46f;stroke-width:1.6}
+.td-kapak b{font:600 9.4cqw/1 Georgia,"Times New Roman",serif;background:linear-gradient(180deg,#f6c899,#c98250);-webkit-background-clip:text;background-clip:text;color:transparent;margin-top:.6cqw}
+.td-kapak span{color:#f0d3b8;font-size:2.7cqw;letter-spacing:.12em;margin-top:.8cqw}
+.td-kapak i{width:4.6cqw;height:.25cqw;background:#c98250;margin-top:2cqw}
+.td-icerik{padding:3.6cqw 2cqw 0}
+.td-icerik h3{display:flex;align-items:center;gap:2.6cqw;margin:0 0 2.6cqw 1.6cqw;font:600 4.6cqw/1 Georgia,"Times New Roman",serif}
+.td-icerik h3::after{content:"";width:5cqw;height:.3cqw;background:var(--bakir)}
+.td-urun{display:flex;align-items:center;gap:3.6cqw;padding:1.3cqw 1.6cqw;border-radius:2.4cqw;background:#fdf7f2}
+.td-urun-gorsel{flex:none;width:15.8cqw;height:12.6cqw;border-radius:1.8cqw;background:radial-gradient(circle at 55% 55%,#7a3b1d 0,#4a2414 45%,#1d120c 75%)}
+.td-urun>div:not(.td-urun-gorsel){flex:1;min-width:0;display:grid;gap:.6cqw}
+.td-urun b{font-size:2.8cqw;font-weight:600}
+.td-urun small{font-size:2.3cqw;color:var(--soluk2);line-height:1.35}
+.td-urun em{font-style:normal;font-weight:700;font-size:3.3cqw;color:var(--bakir);white-space:nowrap}
+.td-bolum{display:grid;grid-template-columns:10cqw 1fr 7cqw;column-gap:3.6cqw;align-items:start;margin-top:2.3cqw;padding:2.2cqw 2.2cqw 2.4cqw 2.7cqw;border-radius:3.5cqw;background:var(--kart);box-shadow:0 .3cqw 1.2cqw rgba(120,70,40,.08)}
+.td-ikon{grid-row:span 2;display:grid;place-items:center;width:10cqw;height:10cqw;border-radius:2.3cqw;background:#f8e2d2;color:var(--ikon)}
+.td-ikon svg{width:5.6cqw;height:5.6cqw}
+.td-ikon .yazi-ikon{font:400 5.4cqw/1 Georgia,serif}
+.td-baslik{margin:.6cqw 0 0;font-size:3.05cqw;font-weight:700}
+.td-aciklama{grid-column:2;margin:.4cqw 0 0;font-size:2.25cqw;color:var(--soluk2)}
+.td-ac{grid-column:3;grid-row:1/span 2;display:grid;place-items:center;width:7cqw;height:7cqw;border-radius:50%;background:linear-gradient(180deg,#b97752,#965a3e)!important;color:#fff!important;box-shadow:0 .5cqw 1.2cqw rgba(120,60,30,.3)}
+.td-ac svg{width:3.4cqw;height:3.4cqw;stroke-width:2.6}
+.td-secenekler{grid-column:2/4;display:flex;gap:1.8cqw;margin-top:2.6cqw}
+.td-sec{position:relative;flex:1;min-width:0;border-radius:1.4cqw;background:var(--kutu2)!important;outline:.3cqw solid transparent;outline-offset:-.3cqw}
+.td-sec.secili{outline-color:var(--bakir);background:#fbf3ec!important}
+.td-renk{aspect-ratio:1.42;padding:.55cqw!important}
+.td-renk.secili{background:#eecdb5!important}
+.td-renk span{position:relative;display:block;height:100%;border-radius:.9cqw;overflow:hidden}
+.td-renk span::after{content:"";position:absolute;right:0;bottom:0;width:50%;height:100%;background:var(--b)}
+.td-renk span.ceyrek::after{height:55%}
+.td-yazi{height:9.4cqw;display:grid;place-content:center;gap:.4cqw;text-align:center}
+.td-yazi b{font-weight:400;font-size:4cqw;line-height:1}
+.td-yazi small{font-size:1.9cqw;color:var(--soluk2)}
+.td-yazi.secili small{color:var(--koyu)}
+.td-gorseller{grid-column:2/4;display:flex;gap:1.5cqw;margin-top:2.6cqw}
+.td-logo,.td-kapak-kucuk{position:relative;height:9.6cqw;border-radius:1.4cqw}
+.td-logo{width:12.9cqw;display:grid;place-items:center;background:#ece0d6!important}
+.td-logo span{display:grid;place-items:center;width:9.4cqw;height:9.4cqw;border-radius:50%;background:#2a1a12;box-shadow:inset 0 0 0 .5cqw #c98250;color:#e2a46f}
+.td-logo span svg{width:4.6cqw;height:4.6cqw}
+.td-kapak-kucuk{width:39cqw;background:radial-gradient(ellipse at 62% 60%,#7a3b1d 0,#3a1c10 40%,transparent 70%),linear-gradient(90deg,#1e130d,#2a1810)!important}
+.td-kalem{position:absolute;right:-.6cqw;bottom:-.6cqw;display:grid;place-items:center;width:4.4cqw;height:4.4cqw;border-radius:50%;background:#fff;color:var(--koyu);box-shadow:0 .2cqw .8cqw rgba(0,0,0,.25)}
+.td-kalem svg{width:2.3cqw;height:2.3cqw}
+.td-gorunum{height:9cqw;display:flex;align-items:center;gap:1.2cqw;padding:0 1.4cqw!important;text-align:left;font-size:1.85cqw;line-height:1.25}
+.td-gorunum svg{flex:none;width:4cqw;height:4cqw;color:var(--ikon)}
+.td-gorunum svg.kucuk{width:2.9cqw;height:2.9cqw}
+.td-kaydet-alan{position:sticky;bottom:0;margin:2.6cqw -3.2cqw -3.2cqw;padding:2cqw 3.2cqw 3.2cqw;background:linear-gradient(transparent,var(--zemin) 35%)}
+.td-kaydet{width:100%;display:flex;align-items:center;justify-content:center;gap:2cqw;height:9.2cqw;border-radius:3.2cqw;background:linear-gradient(180deg,#c47b55,#9b5c3e)!important;color:#fff!important;font-size:3.2cqw!important;font-weight:600;box-shadow:0 .8cqw 2cqw rgba(120,60,30,.3)}
+.td-kaydet svg{width:4.2cqw;height:4.2cqw;stroke-width:2.4}
+/* ===== Tasarım Seç sayfası (gönderilen tasarımdan; ölçüler rem'e çevrildi) ===== */
+.ts{max-width:61.25rem;min-height:100vh;margin:auto;background:#fbf7f1;box-shadow:0 0 2.25rem #3924160b}:where(.ts,.ts-modal) .topbar{display:flex;align-items:center;gap:0.75rem;padding:1.25rem 1.25rem 1rem}:where(.ts,.ts-modal) .back{width:2.375rem;height:2.375rem;border:0.0625rem solid var(--line);background:#fffaf5;border-radius:0.8125rem;font-size:1.3125rem;color:#6e4c38;cursor:pointer}:where(.ts,.ts-modal) .heading{flex:1}:where(.ts,.ts-modal) .heading h1{font-size:1.4375rem;margin:0;font-weight:750;letter-spacing:-.03125rem}:where(.ts,.ts-modal) .heading p{font-size:0.75rem;color:var(--muted);margin:0.3125rem 0 0}:where(.ts,.ts-modal) .brand{font-size:0.75rem;font-weight:800;color:#98603e;letter-spacing:0.05rem;white-space:nowrap}:where(.ts,.ts-modal) .controls{padding:0 1.25rem 1.1875rem}:where(.ts,.ts-modal) .select-label{display:block;font-size:0.75rem;font-weight:750;margin-bottom:0.5rem;color:#6f5545}:where(.ts,.ts-modal) .select-wrap{position:relative}:where(.ts,.ts-modal) .select-wrap:after{content:"⌄";position:absolute;right:0.9375rem;top:50%;transform:translateY(-55%);font-size:1.375rem;color:#94613f;pointer-events:none}:where(.ts,.ts-modal) .select-wrap select{appearance:none;width:100%;border:0.0625rem solid #dfc8b5;background:#fffdf9;border-radius:0.9375rem;padding:0.9375rem 2.75rem 0.9375rem 0.9375rem;font-size:0.875rem;font-weight:650;color:#342923;outline:none;box-shadow:0 0.25rem 0.75rem #5c32100a}:where(.ts,.ts-modal) .select-wrap select:focus{border-color:var(--copper);box-shadow:0 0 0 0.1875rem #b8754e22}:where(.ts,.ts-modal) .hint{font-size:0.6875rem;color:var(--muted);margin:0.5625rem 0.125rem 0}:where(.ts,.ts-modal) .section-head{padding:0 1.25rem 0.8125rem;display:flex;align-items:end;justify-content:space-between;gap:0.75rem}:where(.ts,.ts-modal) .section-head h2{font-size:1.125rem;margin:0}:where(.ts,.ts-modal) .count{font-size:0.6875rem;color:#96623f;background:#f1e1d2;padding:0.375rem 0.5625rem;border-radius:1.25rem;white-space:nowrap}:where(.ts,.ts-modal) .grid{padding:0 1.25rem 1.75rem;display:grid;grid-template-columns:minmax(0,1fr);gap:0.9375rem}:where(.ts,.ts-modal) .design{border:0.0625rem solid #e8d9cc;background:#fffdf9;border-radius:1.125rem;overflow:hidden;min-width:0;cursor:pointer;transition:transform .15s,border-color .15s,box-shadow .15s}@media(hover:hover){:where(.ts,.ts-modal) .design:hover{transform:translateY(-.125rem);box-shadow:0 0.5rem 1.375rem #40230f10}}:where(.ts,.ts-modal) .design.selected{border:0.125rem solid var(--copper);box-shadow:0 0 0 0.1875rem #b8754e20}:where(.ts,.ts-modal) .preview{height:14.0625rem;padding:0.6875rem;background:#eee2d5;display:flex;align-items:center;justify-content:center;overflow:hidden}:where(.ts,.ts-modal) .mini-menu{width:100%;height:100%;border-radius:0.625rem;overflow:hidden;box-shadow:0 0.3125rem 1.125rem #27190e18;display:flex;flex-direction:column}:where(.ts,.ts-modal) .mini-hero{height:37%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0.5rem}:where(.ts,.ts-modal) .mini-logo{font-size:1.0625rem;line-height:1;margin-bottom:0.25rem}:where(.ts,.ts-modal) .mini-title{font-family:Georgia,serif;font-size:clamp(0.9375rem,2.7vw,1.375rem);line-height:1.1}:where(.ts,.ts-modal) .mini-sub{font-size:0.4375rem;letter-spacing:0.0688rem;margin-top:0.3125rem;opacity:.85}:where(.ts,.ts-modal) .mini-body{padding:0.625rem;flex:1;min-height:0}:where(.ts,.ts-modal) .mini-category{font-family:Georgia,serif;font-size:0.75rem;margin-bottom:0.4375rem}:where(.ts,.ts-modal) .mini-item{display:flex;align-items:center;gap:0.4375rem;margin:0.375rem 0}:where(.ts,.ts-modal) .mini-food{width:1.8125rem;height:1.6875rem;flex-shrink:0;border-radius:0.3125rem;display:grid;place-items:center;font-size:0.9375rem}:where(.ts,.ts-modal) .mini-lines{flex:1;min-width:0}:where(.ts,.ts-modal) .mini-lines b{display:block;font-size:0.4375rem;margin-bottom:0.25rem}:where(.ts,.ts-modal) .mini-lines i{display:block;height:0.1875rem;width:80%;border-radius:0.3125rem;background:currentColor;opacity:.2}:where(.ts,.ts-modal) .mini-price{font-size:0.4375rem;font-weight:bold;white-space:nowrap}:where(.ts,.ts-modal) .design-meta{padding:0.75rem 0.8125rem 0.8125rem;display:flex;align-items:center;gap:0.625rem}:where(.ts,.ts-modal) .number{width:2.25rem;height:2.25rem;border-radius:0.6875rem;display:grid;place-items:center;background:#f0e1d3;color:#8b5839;font-size:0.75rem;font-weight:800;flex-shrink:0}:where(.ts,.ts-modal) .meta-text{flex:1;min-width:0}:where(.ts,.ts-modal) .meta-text strong{display:block;font-size:0.8125rem;line-height:1.25}:where(.ts,.ts-modal) .meta-text small{display:block;font-size:0.625rem;color:var(--muted);margin-top:0.25rem}:where(.ts,.ts-modal) .check{width:1.375rem;height:1.375rem;border:0.0938rem solid #d7c7b9;border-radius:50%;display:grid;place-items:center;color:transparent;font-size:0.8125rem;flex-shrink:0}:where(.ts,.ts-modal) .selected .check{background:var(--copper);border-color:var(--copper);color:white}:where(.ts,.ts-modal) .preview-btn{border:0.0625rem solid #dfc7b4;background:#fff8f1;color:#8b5839;border-radius:0.625rem;padding:0.5rem 0.625rem;font-size:0.6875rem;font-weight:750;white-space:nowrap;cursor:pointer}:where(.ts,.ts-modal) .preview-btn:active{transform:scale(.97)}:where(.ts,.ts-modal) .bottom{position:sticky;bottom:0;padding:0.75rem 1.25rem calc(0.75rem + env(safe-area-inset-bottom));background:#fffaf4ee;backdrop-filter:blur(0.625rem);border-top:0.0625rem solid #e9dbcf;display:flex;align-items:center;gap:0.75rem}:where(.ts,.ts-modal) .chosen{flex:1;min-width:0}:where(.ts,.ts-modal) .chosen small{font-size:0.625rem;color:var(--muted);display:block}:where(.ts,.ts-modal) .chosen strong{font-size:0.8125rem;display:block;margin-top:0.1875rem}:where(.ts,.ts-modal) .continue{border:0;border-radius:0.8125rem;background:#a96943;color:#fff8f0;font-weight:750;font-size:0.8125rem;padding:0.875rem 1.125rem;cursor:pointer;box-shadow:0 0.25rem 0.625rem #92552b24}:where(.ts,.ts-modal) .continue:active{transform:scale(.98)}@media(max-width:24.375em){:where(.ts,.ts-modal) .topbar{padding:1rem 0.875rem 0.8125rem}:where(.ts,.ts-modal) .controls{padding:0 0.875rem 1.0625rem}:where(.ts,.ts-modal) .section-head{padding:0 0.875rem 0.6875rem}:where(.ts,.ts-modal) .grid{padding:0 0.875rem 1.4375rem;gap:0.625rem}:where(.ts,.ts-modal) .preview{height:11.0625rem;padding:0.4375rem}:where(.ts,.ts-modal) .mini-body{padding:0.4375rem}:where(.ts,.ts-modal) .mini-category{font-size:0.625rem}:where(.ts,.ts-modal) .mini-item{gap:0.3125rem;margin:0.3125rem 0}:where(.ts,.ts-modal) .mini-food{width:1.5rem;height:1.4375rem;font-size:0.75rem}:where(.ts,.ts-modal) .design-meta{padding:0.625rem 0.5625rem;gap:0.4375rem}:where(.ts,.ts-modal) .number{width:1.9375rem;height:1.9375rem;font-size:0.6875rem}:where(.ts,.ts-modal) .meta-text strong{font-size:0.75rem}:where(.ts,.ts-modal) .meta-text small{font-size:0.5625rem}:where(.ts,.ts-modal) .check{width:1.1875rem;height:1.1875rem}:where(.ts,.ts-modal) .preview-btn{padding:0.4375rem 0.5rem;font-size:0.625rem}:where(.ts,.ts-modal) .bottom{padding-left:0.875rem;padding-right:0.875rem}:where(.ts,.ts-modal) .brand{font-size:0.625rem}}.ts-modal{position:fixed;inset:0;background:#211915d9;z-index:50;display:none;align-items:center;justify-content:center;padding:1rem}.ts-modal.open{display:flex}:where(.ts,.ts-modal) .modal-card{width:min(32.5rem,100%);max-height:92vh;overflow:auto;background:#fffaf5;border-radius:1.25rem;box-shadow:0 1.125rem 3.75rem #0005}:where(.ts,.ts-modal) .modal-head{display:flex;align-items:center;justify-content:space-between;padding:0.875rem 1rem;border-bottom:0.0625rem solid var(--line)}:where(.ts,.ts-modal) .modal-head strong{font-size:0.9375rem}:where(.ts,.ts-modal) .modal-close{border:0;background:#f0e1d3;color:#68452f;border-radius:0.625rem;width:2.125rem;height:2.125rem;font-size:1.3125rem;cursor:pointer}:where(.ts,.ts-modal) .modal-body{padding:0.875rem}:where(.ts,.ts-modal) .modal-body .preview{height:25rem;border-radius:0.8125rem}:where(.ts,.ts-modal) .modal-foot{padding:0 0.875rem 0.875rem}:where(.ts,.ts-modal) .modal-foot button{width:100%;border:0;border-radius:0.75rem;background:#a96943;color:#fff8f0;font-weight:750;padding:0.8125rem;cursor:pointer}.ts,.ts-modal{--bg:#f5eee6;--paper:#fffaf5;--ink:#2b2521;--muted:#81736a;--copper:#b8754e;--line:#e7d8ca;--soft:#efe1d4;color:var(--ink);font-family:Inter,Arial,sans-serif}.ts{min-height:100dvh}:where(.ts) .back{display:grid;place-items:center;text-decoration:none;flex-shrink:0;-webkit-tap-highlight-color:transparent}:where(.ts) .preview{cursor:pointer}:where(.ts) .preview>img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:.625rem;box-shadow:0 .3125rem 1.125rem #27190e18;display:block}.ts-modal .modal-card.tam{width:100%;height:100%;max-height:none;display:flex;flex-direction:column;overflow:hidden}.ts-modal .modal-card.tam .modal-body{flex:1;min-height:0;padding:0}.ts-modal iframe{display:block;width:100%;height:100%;border:0;background:#fffaf4}.ts-modal .modal-card.tam .modal-foot{padding:.875rem}.ts-bildirim{position:fixed;left:50%;bottom:6.5rem;transform:translateX(-50%);z-index:60;background:#2b2521;color:#fff8f0;padding:.7rem 1rem;border-radius:.8rem;font-size:.85rem;box-shadow:0 .5rem 1.5rem #0004;white-space:nowrap;pointer-events:none}
 .alt-katman{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
 .alt-katman>div{max-width:30rem;margin:0 auto}
 .pano-dis{min-height:100vh;min-height:100dvh;background:#fae9db} /* uzun ekranlarda görselin altı, görselin alt rengiyle uzar */
@@ -379,7 +450,127 @@ function sayfaPanel() {
 <nav>${KARTLAR.map(kart).join('')}</nav></div></main>`;
 }
 
+/* ===== Tasarım Seç ===== */
+// Tasarım dosyaları GitHub'da tasarimlar/ klasöründe durur; önizlemeleri yalnızca açılınca indirilir.
+const TASARIM_KLASOR = (TEMIZ ? TABAN : './') + 'tasarimlar/';
+// no, kategori, ad, açıklama, [önizleme zemini, menü zemini, menü yazısı], [kapak stili], logo, başlık, alt yazı, [kategori adı, rengi], fiyat rengi, ürünler, gerçek dosyalar
+const TASARIMLAR = [
+  { no: '01', kat: 'classic', ad: 'Bakır Zarafet', alt: 'Krem · Siyah · Bakır', gorsel: 'bakir-zarafet.webp', html: 'bakir-zarafet.html',
+    renk: ['#e9d9c9', '#fff8ef', '#33241d'], kapak: 'background:#2c211f;color:#f5d7b3', logo: '♧', baslik: 'Lezzet Restoran', altYazi: 'GÜZEL ANLAR, UNUTULMAZ TATLAR', bolum: ['Başlangıçlar'], fiyat: '#a9653e',
+    urunler: [['#d8b28e', '🥣', 'Kremalı Mantar', '₺125'], ['#e8d5bf', '🥗', 'Akdeniz Salata', '₺185']] },
+  { no: '02', kat: 'modern', ad: 'Minimal Krem', alt: 'Sade · Ferah · Modern',
+    renk: ['#f0e9df', '#fffdf9', '#292722'], kapak: 'background:#e9dfd1;color:#302922', logo: '✳', baslik: 'Lezzet', altYazi: 'KAFE & MUTFAK', bolum: ['Menüden'], fiyat: '',
+    urunler: [['#e9d8c5', '🍝', 'Ev Yapımı Makarna', '₺285'], ['#d8c7b4', '☕', 'Türk Kahvesi', '₺85']] },
+  { no: '03', kat: 'dark', ad: 'Gece Şıklığı', alt: 'Siyah · Altın · Premium',
+    renk: ['#d6c9bb', '#211e1c', '#f5e8d8'], kapak: 'background:#171514;color:#d7ad7a', logo: '✦', baslik: 'Lezzet', altYazi: 'RESTAURANT', bolum: ['Şefin Seçimi', '#d7ad7a'], fiyat: '#d7ad7a',
+    urunler: [['#574235', '🥩', 'Izgara Bonfile', '₺480'], ['#47382e', '🍰', 'Özel Tatlı', '₺195']] },
+  { no: '04', kat: 'photo', ad: 'Lezzet Fotoğrafı', alt: 'Görsel ağırlıklı',
+    renk: ['#d9c6b1', '#fff8ed', '#32251e'], kapak: 'height:43%;background:linear-gradient(130deg,#6e4934,#2b201b);color:#fff0dc', logo: '♨', baslik: 'Lezzet Restoran', altYazi: 'FRESH · LOCAL · DELICIOUS', bolum: ['Favoriler'], fiyat: '#a9653e',
+    urunler: [['#b8845b', '🍔', 'Bakır Burger', '₺310'], ['#d5ad86', '🍹', 'Ev Yapımı İçecek', '₺95']] },
+  { no: '05', kat: 'color', ad: 'Adaçayı', alt: 'Yeşil · Doğal · Sakin',
+    renk: ['#dce2d4', '#f8f6ee', '#263b31'], kapak: 'background:#476657;color:#f5f0dc', logo: '❋', baslik: 'Bahçe Mutfak', altYazi: 'DOĞAL VE TAZE', bolum: ['Günün Lezzetleri'], fiyat: '#476657',
+    urunler: [['#d0d9bd', '🥗', 'Bahçe Salatası', '₺185'], ['#c3d0b1', '🍵', 'Bitki Çayı', '₺75']] },
+  { no: '06', kat: 'classic', ad: 'Klasik Şarap', alt: 'Bordo · Krem · Zarif',
+    renk: ['#ead7ce', '#fff7f0', '#482a2d'], kapak: 'background:#6a3439;color:#f6e0ca', logo: '❦', baslik: 'Maison Lezzet', altYazi: 'EST. WITH TASTE', bolum: ['Özel Seçimler'], fiyat: '#8a454a',
+    urunler: [['#d8b7a8', '🍝', 'Şefin Makarnası', '₺295'], ['#e4c7b7', '🍰', 'Günün Tatlısı', '₺175']] },
+  { no: '07', kat: 'modern', ad: 'Mavi Çizgi', alt: 'Mavi · Beyaz · Modern',
+    renk: ['#dce4e8', '#f9fcfd', '#243c4a'], kapak: 'background:#294b60;color:#f0f4f5', logo: '◈', baslik: 'Mavi Masa', altYazi: 'KAFE · MUTFAK', bolum: ['En Sevilenler'], fiyat: '#294b60',
+    urunler: [['#cadbe2', '🍔', 'Gurme Burger', '₺320'], ['#d5e1e6', '🧋', 'Soğuk Kahve', '₺120']] },
+  { no: '08', kat: 'dark', ad: 'Bakır Gece', alt: 'Koyu kahve · Bakır',
+    renk: ['#d9c6b3', '#2d2926', '#f8e9d8'], kapak: 'background:#3c2a24;color:#f0c59b', logo: '✧', baslik: 'Bakır Masa', altYazi: 'TASTE THE MOMENT', bolum: ['Menü', '#e1ad7d'], fiyat: '#e1ad7d',
+    urunler: [['#77513b', '🍗', 'Izgara Tavuk', '₺325'], ['#654531', '☕', 'Türk Kahvesi', '₺85']] },
+];
+const TS_KATEGORILER = [['all', 'Tüm tasarımlar'], ['classic', 'Klasik ve zarif'], ['modern', 'Modern ve sade'], ['dark', 'Koyu ve lüks'], ['photo', 'Fotoğraflı menüler'], ['color', 'Renkli ve canlı']];
+const TS_ANAHTAR = 'menulet-secili-tasarim';
+const TSD = { kat: 'all', secili: (() => { try { return JSON.parse(localStorage.getItem(TS_ANAHTAR))?.no || '01'; } catch { return '01'; } })() };
+const tsBul = (no) => TASARIMLAR.find((t) => t.no === no);
+
+function tsMini(t) {
+  const urun = ([zemin, emoji, ad, fiyat]) => `<div class="mini-item"><div class="mini-food" style="background:${zemin}">${emoji}</div><div class="mini-lines"><b>${ad}</b><i></i></div><div class="mini-price"${t.fiyat ? ` style="color:${t.fiyat}"` : ''}>${fiyat}</div></div>`;
+  return `<div class="mini-menu" style="background:${t.renk[1]};color:${t.renk[2]}"><div class="mini-hero" style="${t.kapak}"><div class="mini-logo">${t.logo}</div><div class="mini-title">${t.baslik}</div><div class="mini-sub">${t.altYazi}</div></div>`
+    + `<div class="mini-body"><div class="mini-category"${t.bolum[1] ? ` style="color:${t.bolum[1]}"` : ''}>${t.bolum[0]}</div>${t.urunler.map(urun).join('')}</div></div>`;
+}
+
+function sayfaTasarimSec() {
+  document.title = 'Tasarım Seç — Menület';
+  const s = tsBul(TSD.secili) || TASARIMLAR[0];
+  const kart = (t) => `<article class="design${t.no === s.no ? ' selected' : ''}" data-no="${t.no}"${TSD.kat !== 'all' && TSD.kat !== t.kat ? ' style="display:none"' : ''}>
+<div class="preview" style="background:${t.renk[0]}" data-act="ts-onizle" data-no="${t.no}">${t.gorsel ? `<img src="${TASARIM_KLASOR + t.gorsel}" alt="${t.ad} tasarımı" loading="lazy">` : tsMini(t)}</div>
+<div class="design-meta" data-act="ts-sec" data-no="${t.no}"><span class="number">${t.no}</span><div class="meta-text"><strong>${t.ad}</strong><small>${t.alt}</small></div><button class="preview-btn" type="button" data-act="ts-onizle" data-no="${t.no}">Önizle</button><span class="check">✓</span></div></article>`;
+  return `<main class="ts">
+<header class="topbar">${bag('/panel', '‹', 'back')}<div class="heading"><h1>Tasarım Seç</h1><p>Menüne en uygun görünümü seç.</p></div><div class="brand">Menület</div></header>
+<section class="controls"><label class="select-label" for="categorySelect">Tasarım kategorisi</label><div class="select-wrap"><select id="categorySelect">${TS_KATEGORILER.map(([v, ad]) => `<option value="${v}"${v === TSD.kat ? ' selected' : ''}>${ad}</option>`).join('')}</select></div></section>
+<section class="grid" aria-label="Menü tasarımları">${TASARIMLAR.map(kart).join('')}</section>
+<footer class="bottom"><div class="chosen"><small>Seçili tasarım</small><strong id="chosenName">${s.no} · ${s.ad}</strong></div><button class="continue" data-act="ts-onayla">Bu tasarımı seç →</button></footer>
+</main>`;
+}
+
+function tsSec(no) {
+  const t = tsBul(no); if (!t) return;
+  TSD.secili = no;
+  document.querySelectorAll('.ts .design').forEach((c) => c.classList.toggle('selected', c.dataset.no === no));
+  const ad = document.getElementById('chosenName'); if (ad) ad.textContent = t.no + ' · ' + t.ad;
+}
+
+function tsOnizle(no) {
+  const t = tsBul(no); if (!t) return;
+  tsKapat();
+  const m = document.createElement('div');
+  m.className = 'ts-modal modal open'; m.setAttribute('role', 'dialog'); m.setAttribute('aria-modal', 'true'); m.dataset.act = 'ts-kapat';
+  // Gerçek dosyası olan tasarım tam ekran ve kendi çerçevesinde açılır (stilleri sitemizi etkilemez)
+  const govde = t.html ? `<iframe src="${TASARIM_KLASOR + t.html}" title="${t.ad} önizlemesi"></iframe>` : `<div class="preview" style="background:${t.renk[0]};height:25rem;border-radius:.8125rem">${tsMini(t)}</div>`;
+  m.innerHTML = `<div class="modal-card${t.html ? ' tam' : ''}"><div class="modal-head"><strong>${t.no} · ${t.ad}</strong><button class="modal-close" data-act="ts-kapat" aria-label="Kapat">×</button></div><div class="modal-body">${govde}</div><div class="modal-foot"><button data-act="ts-modal-sec" data-no="${t.no}">Bu tasarımı seç</button></div></div>`;
+  document.body.append(m); document.body.style.overflow = 'hidden';
+}
+function tsKapat() { document.querySelector('.ts-modal')?.remove(); document.body.style.overflow = ''; }
+
+function tsBildirim(metin) {
+  document.querySelector('.ts-bildirim')?.remove();
+  const b = document.createElement('div'); b.className = 'ts-bildirim'; b.setAttribute('role', 'status'); b.textContent = metin;
+  document.body.append(b); setTimeout(() => b.remove(), 2000);
+}
+
+/* ===== Tasarım Düzenle ===== */
+// Şimdilik yalnızca görünüm: seçimler bellekte tutulur, hiçbir yere kaydedilmez.
+const TD_IKON = {
+  geri: '<path d="M19 12H5M11 6l-6 6 6 6"/>',
+  varsayilan: '<path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v4h4"/><path d="M12 8v4l3 2"/>',
+  goz: '<path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/>',
+  catal: '<path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10M17 3c-1.7 1.5-2.5 4-2.5 7.5H17V21"/>',
+  palet: '<path d="M12 3a9 9 0 1 0 0 18c1.2 0 1.8-.8 1.8-1.7 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-1 .8-1.7 1.8-1.7H16a5 5 0 0 0 5-5c0-4-4-7.2-9-7.2Z"/><circle cx="7.5" cy="11" r="1.2" fill="currentColor"/><circle cx="10" cy="7" r="1.2" fill="currentColor"/><circle cx="14.5" cy="7" r="1.2" fill="currentColor"/>',
+  resim: '<rect x="3" y="4" width="18" height="16" rx="2.5"/><circle cx="8.5" cy="9.5" r="1.8"/><path d="m21 16-5-5-9 9"/>',
+  izgara: '<rect x="3.5" y="3.5" width="7" height="7" rx="1.8" fill="currentColor"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.8" fill="currentColor"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.8" fill="currentColor"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.8" fill="currentColor"/>',
+  ok: '<path d="m9 6 6 6-6 6"/>',
+  kalem: '<path d="M4 20h4L19 9l-4-4L4 16v4Z"/>',
+  liste: '<path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"/>',
+  tamam: '<circle cx="12" cy="12" r="10" fill="#fff" stroke="none"/><path d="m7.5 12.5 3 3 6-6.5" stroke="#a5613f"/>',
+};
+const ikon = (ad, sinif = '') => `<svg viewBox="0 0 24 24" aria-hidden="true"${sinif ? ` class="${sinif}"` : ''}>${TD_IKON[ad]}</svg>`;
+const TD_RENKLER = [['#1a1c1e', '#ce7e4e'], ['#f1d9bd', '#583120', 1], ['#715286', '#321b30'], ['#38203b', '#54152a'], ['#262829', '#f4e0cc', 1], ['#1d3328', '#f2d9bb', 1]];
+const TD_YAZILAR = [['Modern', "Georgia,serif"], ['Klasik', "'Times New Roman',Times,serif"], ['Şık', "Didot,'Bodoni 72','Bodoni MT',Georgia,serif;font-weight:300;font-size:3.4cqw"], ['Sade', "system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:3.4cqw"], ['Yuvarlak', "ui-rounded,'SF Pro Rounded',Nunito,'Varela Round',system-ui,sans-serif"]];
+const TD_GORUNUMLER = [['Fotoğraflı<br>Kart', 'resim'], ['Sade Liste', 'liste'], ['Büyük<br>Fotoğraf', 'resim'], ['Küçük<br>Fotoğraf', 'resim', 'kucuk']];
+const TD = { renk: 0, yazi: 0, gorunum: 0 };
+
+function sayfaTasarimDuzenle() {
+  document.title = 'Tasarım Düzenle — Menület';
+  const sec = (grup, i, sinif, ic) => `<button class="td-sec ${sinif}${TD[grup] === i ? ' secili' : ''}" data-act="td-sec" data-grup="${grup}" data-i="${i}">${ic}</button>`;
+  const bolum = (ikonHtml, baslik, aciklama, alt) => `<section class="td-bolum"><div class="td-ikon">${ikonHtml}</div><h2 class="td-baslik">${baslik}</h2><button class="td-ac" aria-label="${baslik}">${ikon('ok')}</button><p class="td-aciklama">${aciklama}</p>${alt}</section>`;
+  return `<main class="td-dis"><div class="td">
+<header class="td-ust">${bag('/panel', ikon('geri'), 'td-geri')}<h1>Tasarım Düzenle</h1><button class="td-varsayilan">${ikon('varsayilan')}Varsayılana Dön</button></header>
+<section class="td-onizleme" aria-label="Menü önizlemesi"><span class="td-rozet">${ikon('goz')}Menü Önizlemesi</span>
+<div class="td-telefon"><div class="td-ekran"><div class="td-kapak">${ikon('catal')}<b>Menü</b><span>${esc(S.isletme?.name || '')}</span><i></i></div>
+<div class="td-icerik"><h3>Ana Yemekler</h3><div class="td-urun"><div class="td-urun-gorsel"></div><div><b>Izgara Dana Bonfile</b><small>Özel sos ve mevsim sebzeleri ile servis edilir.</small></div><em>₺320 ›</em></div></div></div></div></section>
+${bolum(ikon('palet'), 'Renkler', 'Menünüzün renk kombinasyonunu seçin.', `<div class="td-secenekler">${TD_RENKLER.map(([a, b, c], i) => sec('renk', i, 'td-renk', `<span${c ? ' class="ceyrek"' : ''} style="background:${a};--b:${b}"></span>`)).join('')}</div>`)}
+${bolum('<span class="yazi-ikon">Aa</span>', 'Yazı Tipi', 'Başlık ve ürün yazılarının görünümünü ayarlayın.', `<div class="td-secenekler">${TD_YAZILAR.map(([ad, f], i) => sec('yazi', i, 'td-yazi', `<b style="font-family:${f}">Aa</b><small>${ad}</small>`)).join('')}</div>`)}
+${bolum(ikon('resim'), 'Logo ve Üst Görsel', 'Restoran logo ve üst görselini değiştirin.', `<div class="td-gorseller"><button class="td-logo" aria-label="Logoyu değiştir"><span>${ikon('catal')}</span><i class="td-kalem">${ikon('kalem')}</i></button><button class="td-kapak-kucuk" aria-label="Üst görseli değiştir"><i class="td-kalem">${ikon('kalem')}</i></button></div>`)}
+${bolum(ikon('izgara'), 'Menü Görünümü', 'Ürünlerin menüde nasıl görüneceğini seçin.', `<div class="td-secenekler">${TD_GORUNUMLER.map(([ad, ik, k], i) => sec('gorunum', i, 'td-gorunum', ikon(ik, k) + `<span>${ad}</span>`)).join('')}</div>`)}
+<div class="td-kaydet-alan"><button class="td-kaydet">${ikon('tamam')}Değişiklikleri Kaydet</button></div>
+</div></main>`;
+}
+
 function sayfaAlt(yol) {
+  if (yol === '/tasarim-duzenle') return sayfaTasarimDuzenle();
+  if (yol === '/tasarim-sec') return sayfaTasarimSec();
   document.title = SAYFALAR[yol] + ' — Menület';
   return `<main>${bag('/panel', '← Ana sayfa', 'geri')}<h1>${SAYFALAR[yol]}</h1></main>`;
 }
@@ -409,8 +600,8 @@ function isletmeYukle() {
 function kartYonu(yol) { const k = KARTLAR.find((x) => x[0] === yol); return k && k[1] < PANO.G / 2 ? 'sol' : 'sag'; }
 
 function render() {
-  const yol = mevcutYol(), oncekiYol = sonYol;
-  if (yol !== sonYol) { sonYol = yol; S.menuAcik = false; }
+  const yol = mevcutYol(), oncekiYol = sonYol, oncekiDar = app.classList.contains('dar');
+  if (yol !== sonYol) { sonYol = yol; S.menuAcik = false; tsKapat(); }
   if (S.kullanici) { if (yol !== '/panel' && !SAYFALAR[yol]) return git('/panel', true); }
   else if (!GIRIS_SAYFALARI.includes(yol)) return git('/', true);
 
@@ -422,13 +613,16 @@ function render() {
   }
   const pano = S.kullanici && S.durum === 'hazir' && S.isletme && yol === '/panel';
   app.classList.toggle('tam', pano);
+  // Kendi üst çubuğu olan sayfalar: bizim üst çubuk gösterilmez, sayfa telefon genişliğinde kalır
+  const kendiUstu = S.kullanici && S.durum === 'hazir' && S.isletme && (yol === '/tasarim-duzenle' || yol === '/tasarim-sec');
+  app.classList.toggle('dar', !!kendiUstu);
   const yon = gecisYonu; gecisYonu = null;
   document.querySelector('.alt-katman')?.remove();
   document.querySelector('.kapanan')?.remove();
   if (pano && SAYFALAR[oncekiYol]) {
     // Alt sayfadan ana sayfaya dönüş: kapanan sayfa geldiği yöne kayıp kaybolur, altından ana sayfa görünür.
     const kap = document.createElement('div'); kap.className = 'kapanan ' + kartYonu(oncekiYol);
-    const ic = document.createElement('div'); ic.style.transform = `translateY(${-window.scrollY}px)`;
+    const ic = document.createElement('div'); ic.style.transform = `translateY(${-window.scrollY}px)`; if (oncekiDar) ic.className = 'dar';
     ic.append(...(app.querySelector('.gecis')?.childNodes || app.childNodes)); kap.append(ic); document.body.append(kap);
     kap.addEventListener('animationend', () => kap.remove(), { once: true });
   }
@@ -438,11 +632,12 @@ function render() {
     const ic = document.createElement('div'); ic.style.transform = `translateY(${-window.scrollY}px)`;
     ic.append(...app.childNodes); alt.append(ic); document.body.prepend(alt);
     app.classList.remove('tam');
-    app.innerHTML = `<div class="gecis ${yon}">${ustBar()}${govde}</div>`;
+    app.classList.toggle('dar', !!kendiUstu);
+    app.innerHTML = `<div class="gecis ${yon}">${kendiUstu ? '' : ustBar()}${govde}</div>`;
     app.firstElementChild.addEventListener('animationend', () => alt.remove(), { once: true });
     return;
   }
-  app.innerHTML = (pano ? '' : ustBar()) + govde;
+  app.innerHTML = (pano || kendiUstu ? '' : ustBar()) + govde;
 }
 
 /* =====================================================================
@@ -507,10 +702,39 @@ document.addEventListener('click', async (e) => {
       git('/');
       break;
     case 'yeniden': S.durum = 'bos'; render(); break;
+    case 'ts-onizle': tsOnizle(el.dataset.no); break;
+    case 'ts-sec': tsSec(el.dataset.no); break;
+    case 'ts-modal-sec': tsSec(el.dataset.no); tsKapat(); break;
+    case 'ts-kapat': if (!el.classList.contains('ts-modal') || e.target === el) tsKapat(); break;
+    case 'ts-onayla': {
+      const t = tsBul(TSD.secili);
+      try { localStorage.setItem(TS_ANAHTAR, JSON.stringify({ no: t.no, ad: t.ad, kategori: t.kat })); } catch {}
+      tsBildirim(`${t.no} · ${t.ad} seçildi`);
+      break;
+    }
+    case 'td-sec': {
+      // Tasarım Düzenle: seçeneği işaretle (sayfa yeniden çizilmez)
+      TD[el.dataset.grup] = +el.dataset.i;
+      el.parentElement.querySelectorAll('.td-sec').forEach((b) => b.classList.toggle('secili', b === el));
+      break;
+    }
   }
 });
 
-document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && S.menuAcik) { S.menuAcik = false; render(); } });
+document.addEventListener('keydown', (e) => {
+  if (e.key !== 'Escape') return;
+  if (document.querySelector('.ts-modal')) tsKapat();
+  else if (S.menuAcik) { S.menuAcik = false; render(); }
+});
+// Tasarım Seç: kategori süzgeci. Seçili tasarım gizlenirse görünen ilk tasarım seçilir.
+document.addEventListener('change', (e) => {
+  if (e.target.id !== 'categorySelect') return;
+  TSD.kat = e.target.value;
+  const kartlar = [...document.querySelectorAll('.ts .design')];
+  kartlar.forEach((c) => { c.style.display = TSD.kat === 'all' || tsBul(c.dataset.no).kat === TSD.kat ? '' : 'none'; });
+  const secili = kartlar.find((c) => c.dataset.no === TSD.secili);
+  if (secili && secili.style.display === 'none') { const ilk = kartlar.find((c) => c.style.display !== 'none'); if (ilk) tsSec(ilk.dataset.no); }
+});
 window.addEventListener('popstate', render);
 window.addEventListener('hashchange', render);
 
