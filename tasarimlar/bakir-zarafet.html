@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lezzet Restoran | Menü</title>
+<style>
+:root{--cream:#f7efe5;--paper:#fffaf4;--ink:#26201d;--muted:#7e7066;--copper:#b6754f;--line:#ead8c7;--dark:#282020}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}.page{max-width:760px;margin:auto;min-height:100vh;background:var(--paper);box-shadow:0 0 35px #3b25120c}.hero{padding:34px 22px 30px;text-align:center;color:#f8dfc3;background:#2a201d;position:relative;isolation:isolate;overflow:hidden;min-height:285px}
+.cover-photo{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.cover-photo img{display:block;width:100%;height:100%;object-fit:cover;opacity:.72}
+.cover-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,20,17,.35),rgba(28,20,17,.84))}
+.hero:after{content:"";position:absolute;bottom:-25px;left:-10%;width:120%;height:48px;border-top:2px solid var(--copper);border-radius:50%;transform:rotate(-2deg);z-index:2;pointer-events:none}
+.brand-mark{width:52px;height:52px;display:grid;place-items:center;margin:12px auto 10px;color:#e0ad80;position:relative;z-index:1}
+.brand-mark svg{width:48px;height:48px}
+.tagline{position:relative;z-index:1;margin-top:13px;font-family:Georgia,serif;font-style:italic;font-size:15px;line-height:1.5;letter-spacing:.2px;color:#f8dfc3;text-shadow:0 2px 7px #000b}.hero h1{position:relative;z-index:1;font-family:Georgia,serif;font-weight:500;font-size:clamp(34px,8vw,52px);letter-spacing:-1px;margin:8px 0;text-shadow:0 2px 8px #0008}
+.content{padding:24px 18px 34px}.intro{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:20px}.intro h2{font-family:Georgia,serif;font-weight:500;font-size:25px;margin:0}.intro span{font-size:11px;color:#8e6a52;border:1px solid #e2c7b1;padding:7px 10px;border-radius:20px;white-space:nowrap}
+.category{margin:24px 0 0}.category-head{display:flex;align-items:center;gap:11px;margin-bottom:13px}.category-head h3{font-family:Georgia,serif;font-size:23px;font-weight:500;margin:0;white-space:nowrap}.category-head:after{content:none}.category-head small{font-size:11px;color:#a16a45}
+.products{display:grid;gap:10px}.product{display:grid;grid-template-columns:86px minmax(0,1fr) auto;align-items:center;gap:12px;padding:10px;border-radius:17px;background:#fffdf9;border:1px solid #f0e4d8;box-shadow:0 5px 15px #5a34200a}.food{width:86px;height:82px;border-radius:12px;display:grid;place-items:center;font-size:36px;background:linear-gradient(140deg,#ead4bd,#c18b61);overflow:hidden}.product h4{font-size:15px;margin:0 0 5px;line-height:1.25}.product p{font-size:11px;color:var(--muted);line-height:1.45;margin:0}.price{align-self:start;padding-top:4px;color:#a5633e;font-weight:750;font-size:14px;white-space:nowrap}.tag{display:inline-block;margin-top:6px;padding:3px 6px;border-radius:5px;background:#f3e3d4;color:#8d5a3c;font-size:9px;font-weight:bold;letter-spacing:.3px}
+.featured{background:#fffdf9;color:var(--ink);border-radius:18px;padding:16px;display:grid;grid-template-columns:76px minmax(0,1fr) auto;align-items:center;gap:12px;margin:12px 0}.featured .food{width:76px;height:76px;background:linear-gradient(135deg,#b8794d,#ead0ad)}.featured h4{font-family:Georgia,serif;font-size:17px;font-weight:500;margin:0 0 5px}.featured p{font-size:11px;color:var(--muted);line-height:1.45;margin:0}.featured .price{color:#a5633e}.footer{background:#272020;color:#e8c6a5;text-align:center;padding:25px 16px 30px}.footer .line{width:45px;height:2px;background:var(--copper);margin:0 auto 13px}.footer strong{font-family:Georgia,serif;font-size:22px;font-weight:500}.footer p{font-size:11px;color:#cbb3a0;margin:8px 0 0;letter-spacing:.8px}
+@media(max-width:390px){.content{padding:21px 12px 28px}.product{grid-template-columns:68px minmax(0,1fr) auto;gap:9px;padding:8px}.food{width:68px;height:70px;font-size:29px}.product h4{font-size:13px}.product p{font-size:10px}.price{font-size:12px}.featured{grid-template-columns:60px minmax(0,1fr) auto;gap:9px;padding:12px}.featured .food{width:60px;height:64px}.featured h4{font-size:15px}.intro h2{font-size:22px}.category-head h3{font-size:21px}}
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="hero">
+    <div class="cover-photo" aria-hidden="true">
+      <img alt="" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=85">
+    </div>
+    <div class="brand-mark" aria-label="Lezzet Restoran logosu"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 5V14C6 17 8 19 11 19V27M11 5V13M16 5V13C16 17 14 19 11 19M22 5C19 10 19 15 22 17V27M22 17C25 15 25 10 22 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <h1>Lezzet Restoran</h1>
+    <div class="tagline">Güzel anlar, unutulmaz tatlar.</div>
+  </header>
+  <div class="content">
+    <section class="category">
+      <div class="category-head"><h3>Başlangıçlar</h3></div>
+      <div class="products">
+        <article class="product"><div class="food">🥣</div><div><h4>Kremalı Mantar Çorbası</h4><p>Taze mantar, krema ve çıtır ekmek.</p><span class="tag">ŞEFİN ÖNERİSİ</span></div><div class="price">₺125</div></article>
+        <article class="product"><div class="food">🥗</div><div><h4>Akdeniz Salata</h4><p>Mevsim yeşillikleri, peynir ve zeytin.</p></div><div class="price">₺185</div></article>
+        <article class="product"><div class="food">🧀</div><div><h4>Çıtır Peynir Tabağı</h4><p>Özel sos ve taze yeşilliklerle.</p></div><div class="price">₺210</div></article>
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="category-head"><h3>Ana Yemekler</h3></div>
+      <article class="featured"><div class="food">🥩</div><div><h4>Izgara Dana Bonfile</h4><p>Mevsim sebzeleri ve özel sos eşliğinde.</p><span class="tag">ÇOK SEVİLEN</span></div><div class="price">₺480</div></article>
+      <div class="products">
+        <article class="product"><div class="food">🍗</div><div><h4>Kekikli Tavuk</h4><p>Izgara tavuk, patates ve kekik sosu.</p></div><div class="price">₺325</div></article>
+        <article class="product"><div class="food">🍝</div><div><h4>Kremalı Mantarlı Makarna</h4><p>Parmesan ve taze çekilmiş karabiber.</p></div><div class="price">₺285</div></article>
+        <article class="product"><div class="food">🍔</div><div><h4>Bakır Burger</h4><p>Izgara köfte, cheddar ve ev yapımı sos.</p></div><div class="price">₺310</div></article>
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="category-head"><h3>Tatlılar</h3></div>
+      <div class="products">
+        <article class="product"><div class="food">🍰</div><div><h4>San Sebastian</h4><p>Karamelize üst yüzey, kremsi doku.</p></div><div class="price">₺195</div></article>
+        <article class="product"><div class="food">🍫</div><div><h4>Çikolatalı Sufle</h4><p>Ilık servis, akışkan çikolata dolgusu.</p></div><div class="price">₺175</div></article>
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="category-head"><h3>İçecekler</h3></div>
+      <div class="products">
+        <article class="product"><div class="food">☕</div><div><h4>Türk Kahvesi</h4><p>Geleneksel usulle, lokum eşliğinde.</p></div><div class="price">₺85</div></article>
+        <article class="product"><div class="food">🥤</div><div><h4>Ev Yapımı Limonata</h4><p>Taze limon, nane ve buz.</p></div><div class="price">₺95</div></article>
+        <article class="product"><div class="food">🧋</div><div><h4>Soğuk Kahve</h4><p>Espresso, süt ve buz.</p></div><div class="price">₺120</div></article>
+      </div>
+    </section>
+  </div>
+  <footer class="footer"><div class="line"></div><strong>Her tabakta ayrı bir hikâye.</strong><p>AFİYET OLSUN · LEZZET RESTORAN</p></footer>
+</main>
+</body>
+</html>
